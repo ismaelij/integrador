@@ -182,10 +182,11 @@ nav{
     border-radius: 2rem;
     margin-bottom: 1rem;
     width: 90%;
-    height: 343px;
+    padding: 2rem;
+    /* height: 343px; */
 }
 .pp{
-    height: 365px;
+   /*  height: 365px; */
 }
 .precio{
     margin-bottom: 1.6rem;
@@ -314,9 +315,6 @@ footer{
     }
     .texto_promocion .p2{
         font-size: 12px;
-    }
-    .product{
-        height: 400px;
     }
 }
 
