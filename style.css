@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+
+body{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+header{
+    background-color:black;
+    /* padding: 1rem 1rem 3.2rem 1rem; */
+    width: 100%;
+    /* position: relative; */
+
+}
+
+.logo{
+    width: 6rem;
+}
+
+nav{
+    /* height: 100px; */
+    /* position: absolute; */
+    width: 100%;
+    height: 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar_btn{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.bar_btn i{
+    color: whitesmoke;
+    font-size: 2.2rem;
+}
+
+/* NAV_MENU */
+.nav_menu{
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    /* height: 100vh; */ /* FIJARSE */
+    top: 100px;
+    background-color: whitesmoke ;
+}
+.nav_menu li{
+    display: none;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0.5rem 0;
+}
+.nav_menu li a{
+    color: rgba(0, 0, 0, 0.95);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+}
+
+/* CHECK */
+#check{
+    display: none;
+}
+/* #check:checked ~ .nav_menu{  
+    height: 100vh;
+}  *//* FIJARSE */
+#check:checked ~ .nav_menu li{
+    display: block;
+}
+
+/* ABOUT CONTENT */
+.about_section{
+    margin-top: 1rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulos{
+    text-align: center;
+    height: 200px;
+
+}
+.titulos p{
+    color: #8abd50;
+    font-weight: 700;
+}
+.titulos h2{
+    font-size: 2rem;
+    color: black;
+}
+.grow_shop{
+    margin-bottom: 2rem;
+}
+.btns{
+    color: whitesmoke;
+    background-color: #8abd50;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.conteiner_img{
+    height: auto;
+    width: 100%;
+}
+.humo{
+    width: 100%;
+    height: 390px;
+}
+
+/* VENTAS_SECTION */
+.vent{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.ventas_parrafos{
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: absolute;
+}
+
+.ventas_products{
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+/* PRODUCTOS_SECTION */
+.productos_section{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.texto_promocion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto_promocion h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.texto_promocion .p1{
+    color: #8abd50;
+    font-weight: 700;
+    font-size: 17px;
+}
+.texto_promocion .p2{
+    font-size: 9px;
+    opacity: 0.5;
+}
+.texto_promocion img{
+    margin: 1.5rem 0;
+    width: 4rem;
+}
+
+.product{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    height: 343px;
+}
+.pp{
+    height: 365px;
+}
+.precio{
+    margin-bottom: 1.6rem;
+}
+.product img{
+    width: 60%;
+}
+.pr_div2 .pr{
+    margin-top: 0.3rem;
+    text-transform: uppercase;
+    color: #8abd50;
+    font-weight: 700;
+}
+.pr_div2 .precio{
+    margin-top: 0.4rem;
+    font-weight: 700;
+}
+
+/* SECTION_CONTACTO */
+.section_contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section_contacto img{
+    margin-bottom: 1.4rem;
+}
+.contact_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+.contact_form{
+    background-image: url(/imgs/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 100%;
+    /* margin-bottom: 1rem; */
+}
+.contact_form input{
+    background: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+    border: none;
+    border-bottom: 2px solid #8abd50;
+    outline: none;
+    width: 100%;
+}
+.contact_form .textarea{
+    background: none;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #8abd50;
+    margin-bottom: 1rem;
+}
+.btn_contact{
+    font-size: 1rem;
+    width: 100%;
+    height: 2rem;
+    color: whitesmoke;
+    font-weight: 400;
+    background-color: #8abd50;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem; 
+    background-color: rgba(0, 0, 0, 0.95);
+}
+.logofooter{
+    width: 14rem;
+}
+.contact_conteiner{
+    width: 80%;
+}
+.contact_info{
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+   /*  border: 1px solid red; */
+}
+.contact_info i{
+    font-size:1.7rem;
+}
+
+/* MEDIA QUERIES */
+
+/* 1)TABLETS */
+@media (min-width:481px) {
+    .titulos{
+        height:250px;
+    }
+    .titulos p{
+        font-size: 1.5rem;
+    }
+    .titulos h2{
+        font-size: 2.5rem;
+    }
+    .humo{
+        height: 400%;
+    }
+    .vent{
+        height: 300px;
+    }
+    .texto_promocion h2{
+        font-size: 2rem;
+    }
+    .texto_promocion .p1{
+        font-size: 19px;
+    }
+    .texto_promocion .p2{
+        font-size: 12px;
+    }
+    .product{
+        height: 400px;
+    }
+}
+
+/* .product{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    height: 343px;
+}
+.pp{
+    height: 365px;
+} */
