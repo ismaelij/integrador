@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'IBM Plex Serif', serif;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: #8abd50;
+    background-image: url(./imgs/omar-ram-YFhyL57eM84-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register{
+    max-width: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 90%;
+    border: 3px solid #8abd50;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    background-color: rgba(0, 0, 00, 0.80);
+    padding: 3rem;
+}
+.logo img{
+    width: 14rem;
+}
+form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input:focus{
+    color: whitesmoke;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.item label{
+    font-weight: 600;
+}
+.item input{
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #8abd50;
+}
+.remember{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.btn{
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    border: none;
+    background-color: #8abd50;
+}
+@media(max-width:768px){
+    .register{
+        flex-direction: column;
+    }
+}
+
+/* .register{
+    max-width: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 90%;
+    border: 3px solid #8abd50;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    background-color: rgba(0, 0, 00, 0.80);
+    padding: 3rem;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+.logo img{
+    width: 14rem;
+}
+form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input:focus{
+    color: whitesmoke;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+}
+.item label{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.item input{
+    outline: none;
+    background:none;
+    border: none;
+    border-bottom: 1px solid #8abd50;
+}
+.btn{
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    border: none;
+    background-color: #8abd50;
+}
+
+@media(max-width:768px){
+    .login{
+        flex-direction: column;
+    }
+} */
